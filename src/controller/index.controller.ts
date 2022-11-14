@@ -11,6 +11,11 @@ class IndexController {
             title: "About Page"
         });
     }
+    public static health = (req: Request, res: Response, next: any) => {
+        res.render("pages/about", {
+            title: "Health Page"
+        });
+    }
 }
 
 export default IndexController;

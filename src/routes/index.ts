@@ -66,6 +66,7 @@ export const registerSocket = (io:Server) => {
             console.log('user disconnected');
         });
         console.log(`${sockets.size}`);
+        io.emit("online-users", sockets.size);
         emitOnlineUsers(io, sockets)
     });
 };

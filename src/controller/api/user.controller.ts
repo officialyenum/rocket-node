@@ -10,7 +10,7 @@ import RabbitMQ from "../../library/rabbitMQ";
 const userRepository = AppDataSource.getRepository(User);
 const rabbitMQ = new RabbitMQ();
 class UserController {
-
+    
     public async all(request: Request, response: Response, next: NextFunction) {
         const users = await userRepository.find()
         // const users:User[] = await AppDataSource.getRepository(User).createQueryBuilder("user").getMany()

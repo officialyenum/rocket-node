@@ -19,12 +19,4 @@ export default class SocketIO {
         }
         return io;
     }
-
-    public setSocket = () => {
-        
-    }
-
-    public getSocket = () => {
-
-    }
 };

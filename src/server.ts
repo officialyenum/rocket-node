@@ -1,7 +1,7 @@
 import express from 'express';
 import { AppDataSource } from "./data-source"
 import expressLayouts from 'express-ejs-layouts';
-import * as path from 'path';
+import path from 'path';
 import * as routes from './routes';
 import { User } from "./entity/User"
 import { createServer } from "http";
